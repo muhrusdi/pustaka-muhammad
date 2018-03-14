@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux'
 
-const globalnav = (state = globalnavState, action) => {
+const globalnav = (state = {}, action) => {
   switch (action.type) {
     case 'TOGGLE_NAV': {
       return {...state, toggle: action.payload}

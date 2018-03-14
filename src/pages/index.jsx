@@ -5,7 +5,7 @@ class Index extends Component {
   render() {
     return (
       <Fragment>
-        home
+        <h1>Gatsbyjs Stater</h1>
       </Fragment>
     )
   }

@@ -6,6 +6,9 @@ class App extends Component {
   render() {
     return (
       <Fragment>
+        {
+          this.props.children()
+        }
       </Fragment>
     )
   }
