@@ -5,6 +5,7 @@
   "author": "muhrusdi",
   "dependencies": {
     "gatsby": "^1.9.223",
+    "gatsby-image": "^1.0.42",
     "gatsby-link": "^1.6.38",
     "gatsby-plugin-react-helmet": "^2.0.6",
     "react-helmet": "^5.2.0"
@@ -26,7 +27,10 @@
     "gatsby-plugin-less": "^1.1.7",
     "gatsby-plugin-offline": "^1.0.15",
     "gatsby-plugin-sass": "^1.0.21",
+    "gatsby-plugin-sharp": "^1.6.41",
     "gatsby-plugin-typography": "^1.7.18",
+    "gatsby-source-filesystem": "^1.5.27",
+    "gatsby-transformer-sharp": "^1.6.22",
     "prettier": "^1.11.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",

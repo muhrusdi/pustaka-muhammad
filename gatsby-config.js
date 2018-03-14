@@ -8,11 +8,20 @@ module.exports = {
     'gatsby-plugin-sass',
     'gatsby-plugin-less',
     'gatsby-plugin-offline',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-plugin-typography',
       options: {
         pathToConfigModule: `src/utils/typography.js`
       }
-    }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `img`,
+        path: `${__dirname}/src/images/`
+      }
+    },
   ],
 };
