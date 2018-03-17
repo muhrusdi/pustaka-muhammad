@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react'
 import Link from 'gatsby-link'
 import { css } from 'emotion'
 import Container from '../components/Container'
-import Banner from '../components/Banner'
+import Banner from '../hoc'
 import Grid from '../components/Grid'
 
 class Index extends Component {
