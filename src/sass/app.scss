@@ -1,0 +1,37 @@
+.ant-dropdown {
+  top: 59.5px !important;
+  .ant-dropdown-menu {
+    font-size: 14px;
+    line-height: 1.35722;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    background: #fff;
+    border: none;
+    border-radius: 2px;
+    width: 240px;
+    box-shadow: none;
+    overflow: hidden;
+    .ant-dropdown-menu-item {
+      margin: 0 auto;
+      padding: 0 20px;
+      position: relative;
+      z-index: 2;
+      &:last-child {
+        border-bottom: none;
+      }
+      a {
+        color: #0070c9;
+        display: block;
+        line-height: 43px;
+        border-bottom: 1px solid #e3e3e3;
+        padding: 0 8px;
+        text-decoration: none;
+        margin: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}

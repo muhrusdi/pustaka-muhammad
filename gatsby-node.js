@@ -1,11 +1,11 @@
 exports.modifyBabelrc = ({ babelrc }) => {
   return {
     ...babelrc,
-    // plugins: babelrc.plugins.concat([
-    //   ["import", {
-    //     "libraryName": "antd",
-    //     "style": true,
-    //   }]
-    // ])
+    plugins: babelrc.plugins.concat(["emotion",
+      ["import", {
+        "libraryName": "antd",
+        "style": true,
+      }]
+    ])
   }
 }

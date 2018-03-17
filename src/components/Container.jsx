@@ -11,7 +11,7 @@ class Container extends Component {
     this.setMaxWidth = this.setMaxWidth.bind(this)
   }
 
-  componentDidMount() {
+  componentWillMount() {
     this.setMaxWidth()
   }
 
@@ -32,6 +32,8 @@ class Container extends Component {
         max-width: ${this.state.width}px;
         margin-left: auto;
         margin-right: auto;
+        padding-left: 16px;
+        padding-right: 16px;
       `}>
         {
           this.props.children
