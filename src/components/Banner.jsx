@@ -5,22 +5,64 @@ import { css } from 'emotion'
 import Container from '../components/Container'
 
 class Banner extends Component {
+  componentDidMount() {
+    setTimeout(() => {
+      this.refs.antCarousel.innerSlider.list.firstChild.style.height = '500px'
+    }, 500)
+  }
   render() {
     return (
       <div className={css`
+        .slick-track {
+          height: 0;
+          overflow: hidden;
+          transition: height .5s ease;
+        }
         .slick-slide {
           text-align: center;
-          height: 500px;
           line-height: 160px;
           background: #364d79;
           overflow: hidden;
+          height: 500px;
         }
       `}>
-        <Carousel>
-          <div><h3>1</h3></div>
-          <div><h3>2</h3></div>
-          <div><h3>3</h3></div>
-          <div><h3>4</h3></div>
+        <Carousel ref="antCarousel">
+          <div>
+            <Row type="flex" align="middle" className={css`
+              height: 500px;
+            `}>
+              <Col span={12}>
+                <h1>sdf</h1>
+              </Col>
+              <Col span={12}>
+                <h1>tes</h1>
+              </Col>
+            </Row>
+          </div>
+          <div>
+            <Row type="flex" align="middle" className={css`
+              height: 500px;
+            `}>
+              <Col span={12}>
+                <h1>Muhammad Rusdi</h1>
+              </Col>
+              <Col span={12}>
+                <h1>Muhammad Rusdi</h1>
+              </Col>
+            </Row>
+          </div>
+          <div>
+            <Row type="flex" align="middle" className={css`
+              height: 500px;
+            `}>
+              <Col span={12}>
+                <h1>Muhammad Rusdi</h1>
+              </Col>
+              <Col span={12}>
+                <h1>Muhammad Rusdi</h1>
+              </Col>
+            </Row>
+          </div>
         </Carousel>
       </div>
     )

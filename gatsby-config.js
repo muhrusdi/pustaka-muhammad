@@ -7,7 +7,6 @@ module.exports = {
     'gatsby-plugin-emotion',
     'gatsby-plugin-sass',
     'gatsby-plugin-less',
-    'gatsby-plugin-offline',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     {

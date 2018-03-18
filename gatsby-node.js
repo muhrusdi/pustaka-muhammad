@@ -5,8 +5,7 @@ exports.modifyBabelrc = ({ babelrc }) => {
       ["import", {
         "libraryName": "antd",
         "style": true,
-      }],
-      "react-loadable/babel"
+      }]
     ])
   }
 }
